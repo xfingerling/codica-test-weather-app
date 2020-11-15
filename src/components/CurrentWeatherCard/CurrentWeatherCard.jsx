@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import {
   Card,
@@ -96,6 +97,13 @@ const LocalWeatherCard = ({
       </Grid>
     </Grid>
   );
+};
+
+LocalWeatherCard.propTypes = {
+  currentWeatherData: PropTypes.object.isRequired,
+  favoriteCities: PropTypes.arrayOf(PropTypes.string).isRequired,
+  getCurrentWeather: PropTypes.func.isRequired,
+  setFavoriteCity: PropTypes.func.isRequired,
 };
 
 export default LocalWeatherCard;

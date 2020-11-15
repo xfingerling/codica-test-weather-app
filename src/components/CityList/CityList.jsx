@@ -1,5 +1,6 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
+import PropTypes from "prop-types";
 
 import CityCard from "../../containers/containerCityCard";
 
@@ -17,6 +18,10 @@ const CityList = ({ favoriteCities }) => {
       {listItems}
     </Grid>
   );
+};
+
+CityList.propTypes = {
+  favoriteCities: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default CityList;

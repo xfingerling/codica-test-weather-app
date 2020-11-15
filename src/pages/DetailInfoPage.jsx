@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Grid } from "@material-ui/core";
+import PropTypes from "prop-types";
 
 import openWeatherAPI from "../api/openWeatherAPI";
 
@@ -46,6 +47,10 @@ const DetailInfoPage = ({ location }) => {
       </Grid>
     </>
   );
+};
+
+DetailInfoPage.propTypes = {
+  location: PropTypes.object.isRequired,
 };
 
 export default DetailInfoPage;

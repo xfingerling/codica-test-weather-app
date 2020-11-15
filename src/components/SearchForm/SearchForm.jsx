@@ -1,7 +1,7 @@
-/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { TextField, Button } from "@material-ui/core";
 import SearchIcon from "@material-ui/icons/Search";
+import PropTypes from "prop-types";
 
 import styles from "./SearchForm.module.css";
 
@@ -36,6 +36,10 @@ const SearchForm = ({ getCurrentWeather }) => {
       </div>
     </form>
   );
+};
+
+SearchForm.propTypes = {
+  getCurrentWeather: PropTypes.object.isRequired,
 };
 
 export default SearchForm;

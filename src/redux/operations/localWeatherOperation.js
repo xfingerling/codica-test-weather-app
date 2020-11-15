@@ -1,7 +1,7 @@
 import * as localWeatherAction from "../actions/localWeatherAction";
 import openWeatherAPI from "../../api/openWeatherAPI";
 
-export const fetchCurrentLocalWeather = () => (dispatch, getState) => {
+export const fetchCurrentLocalWeather = () => (dispatch) => {
   dispatch(localWeatherAction.localWeatherRequest());
   openWeatherAPI
     .fetchCurrentWeatherByGeolocation()

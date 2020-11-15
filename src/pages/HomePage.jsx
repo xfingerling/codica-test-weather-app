@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import PropTypes from "prop-types";
 
 import { getLocalStorage } from "../utils/localStorage";
 
@@ -24,6 +25,11 @@ const HomePage = ({ getCurrentWeather, setFavoriteCity }) => {
       <CityList />
     </>
   );
+};
+
+HomePage.propTypes = {
+  getCurrentWeather: PropTypes.object.isRequired,
+  setFavoriteCity: PropTypes.func.isRequired,
 };
 
 export default HomePage;

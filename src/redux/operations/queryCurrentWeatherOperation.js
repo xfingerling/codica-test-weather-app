@@ -1,7 +1,7 @@
 import * as queryCurrentWeatherAction from "../actions/queryCurrentWeatherAction";
 import openWeatherAPI from "../../api/openWeatherAPI";
 
-export const fetchCurrentWeather = (query) => (dispatch, getState) => {
+export const fetchCurrentWeather = (query) => (dispatch) => {
   dispatch(queryCurrentWeatherAction.currentWeatherRequest);
   openWeatherAPI
     .fetchCurrentWeather(query)

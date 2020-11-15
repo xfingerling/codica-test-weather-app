@@ -9,6 +9,7 @@ import {
 } from "@material-ui/core";
 import RefreshIcon from "@material-ui/icons/Refresh";
 import DeleteIcon from "@material-ui/icons/Delete";
+import PropTypes from "prop-types";
 
 import openWeatherAPI from "../../../api/openWeatherAPI";
 import {
@@ -88,6 +89,11 @@ const CityCard = ({ cityName, setFavoriteCity }) => {
       </CardActionArea>
     </Card>
   );
+};
+
+CityCard.propTypes = {
+  cityName: PropTypes.string.isRequired,
+  setFavoriteCity: PropTypes.func.isRequired,
 };
 
 export default CityCard;
