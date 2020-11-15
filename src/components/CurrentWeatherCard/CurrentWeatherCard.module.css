@@ -1,0 +1,21 @@
+.container {
+  margin-bottom: 20px;
+}
+
+.wrapImg {
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  max-width: 200px;
+}
+
+.currentTemp {
+  text-align: center;
+  font-size: 30px;
+}
+
+.temp {
+  text-align: center;
+}

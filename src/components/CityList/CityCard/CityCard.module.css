@@ -1,0 +1,21 @@
+.header {
+  padding: 6px 16px;
+}
+
+.wrapImg {
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  max-width: 100px;
+}
+
+.currentTemp {
+  text-align: center;
+  font-size: 30px;
+}
+
+.temp {
+  text-align: center;
+}
